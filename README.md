@@ -1,8 +1,4 @@
 # Tools
-
-Linux tools cheat sheets.
-
-## Refs
 - Generic [debug tools][1]
 - Linux [networking tools][3]
 - Linux [performance tools][2]
