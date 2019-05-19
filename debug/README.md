@@ -21,6 +21,7 @@
 - netstat - info about network connections (`sudo netstat -tunapl`)
 - sockets - socket by inode (`lsof | grep <i>` / `netstat -apen | grep <i>`)
 - tcpdump - dump traffic on a network (`tcpdump -i eth0 tcp dst port 33060`)
+- wireshark - network analysis (`tcpdump port 80 -w http.pcap` / `wireshark http.pcap`)
 
 ### CPU/Memory:
 - gdb.rb - debugger (`gdb.rb <pid>`)
