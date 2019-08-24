@@ -55,6 +55,9 @@ openssl req -new -x509 -days 365 -key ca.key -out ca.crt
 # view certificate content
 openssl x509 -text -in ca.crt
 
+# view information about csr
+openssl req -noout -text -in ex.csr
+
 # view private and public keys
 openssl rsa -noout -text -in private.key
 openssl pkey -noout -text -pubin -in public.key
