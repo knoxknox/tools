@@ -28,16 +28,6 @@ gpg -ao privatekey.asc --export-secret-keys user@ex.com
 ```
 
 ```sh
-Options:
--a: ascii output
--s: sign message
--e: encrypt message
--d: decrypt message
---verify: check signature
--u: key used to sign a message
--r: recepient key used for encryption
---clearsign: sign message, inject signature
-
 # check signature of message.txt
 gpg --verify sign.gpg message.txt
 
