@@ -64,7 +64,8 @@ openssl pkey -noout -text -pubin -in public.key
 
 # extract public key from private key
 ssh-keygen -y -f private.key > public.key
-openssl rsa -pubout -in private.key -out public.key
+ssh-keygen -y -e -m PKCS8 -f private.key > public.key
+openssl rsa -pubout -outform PEM -in private.key > public.key
 ```
 
 ```sh
