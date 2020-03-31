@@ -61,6 +61,10 @@ openssl req -noout -text -in ex.csr
 # view private and public keys
 openssl rsa -noout -text -in private.key
 openssl pkey -noout -text -pubin -in public.key
+
+# extract public key from private key
+ssh-keygen -y -f private.key > public.key
+openssl rsa -pubout -in private.key -out public.key
 ```
 
 ```sh
