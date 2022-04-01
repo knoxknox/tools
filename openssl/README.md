@@ -62,6 +62,10 @@ openssl req -noout -text -in ex.csr
 openssl rsa -noout -text -in private.key
 openssl pkey -noout -text -pubin -in public.key
 
+# extract public key from ssh key
+ssh-keygen -e -m PEM -f sshpub.key > public.key
+ssh-keygen -e -m PKCS8 -f sshpub.key > public.key
+
 # extract public key from private key
 ssh-keygen -y -f private.key > public.key
 ssh-keygen -y -e -m PKCS8 -f private.key > public.key
